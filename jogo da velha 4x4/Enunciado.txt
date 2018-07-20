@@ -1,0 +1,4 @@
+1 (um) - click - Criar o objeto do jogador 1
+2 (dois) - clicks  - Cria o objeto do jogador 2
+Cada jogador pode fazer até duas jogadas por vez.
+O jogador pode se apagar um objeto jogado, se ainda for a vez dele, ou seja se ele não fez o segunda jogada

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+			<!-- header -->
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="template.css">
+	<script type="text/javascript" src="template.js"></script>
+
+	<title>Jogo da Velha</title>
+</head>
+
+
+<body>
+						<!-- Display -->
+
+	<div align="center" class="display">
+		<h1>Jogo da velha com javascript</h1>
+			
+		<p id="tuto"> Clique no botão para inicar o jogo</p>
+
+		<!-- Botão para começar o jogo -->
+
+		<button onclick="start_game(this.id)" id="botao" style="display: block;">Iniciar</button>
+		<br>
+		<br>
+			
+		<p id="melhord" style="display: none;">
+			<span id="turno">Turno</span> <img id="jogada" src="img/x.png">
+		</p>
+		<br>
+		<br>		
+
+			<img id="img1" src="img/x.png">
+			<img id="img2" src="img/o.png">
+			
+		<br>	
+		<br>
+
+		<p id="score" style="display: none;">
+			
+			<span id="jogador1"></span>
+			
+						
+			<span id="jogador2"></span>
+			
+			
+
+		</p>
+
+	</div>
+				<!-- Fim do Display -->
+	
+
+						<!-- Tabuleiro -->
+	<table align="center">
+		<tr>
+			<td><img class="espaco" src="img/default.png"   id="casa1-1"/></td>
+			<td><img class="espaco" src="img/default.png"   id="casa1-2"/></td>
+			<td><img class="espaco" src="img/default.png"   id="casa1-3"/></td>
+		</tr>
+
+		<tr>
+			<td><img class="espaco" src="img/default.png"  id="casa2-1"/></td>
+			<td><img class="espaco" src="img/default.png"  id="casa2-2"/></td>
+			<td><img class="espaco" src="img/default.png"  id="casa2-3"/></td>
+		</tr>
+
+		<tr>
+			<td><img class="espaco" src="img/default.png"  id="casa3-1"/></td>
+			<td><img class="espaco" src="img/default.png"  id="casa3-2"/></td>
+			<td><img class="espaco" src="img/default.png"  id="casa3-3"/></td>
+		</tr>
+		
+		<tr >
+			<td colspan="3" id="ganhador"></td>
+		</tr>		
+	</table>	
+				<!-- Fim Tabuleiro -->
+
+						
+     			<!-- Botão para próxima rodada -->
+	<div align="center">
+			<button onclick="recomeca()" id="proxima_rodada">Próxima rodada</button>
+				
+	</div>
+		<img src="img/default.png" hidden="" id="blank"/>
+
+</body>
+
+</html>
